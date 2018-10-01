@@ -3,7 +3,7 @@ from flask import Flask
 
 app = Flask(__name__)
 conn = redis.Redis(host='localhost', port=6379)
-RES_STR = "appB {} {} times"
+RES_STR = "appB {} {} times\n"
 
 
 @app.route('/view', methods=['GET'])
